@@ -1,0 +1,33 @@
+p {
+  font-family: 'Instrument Serif', 'Sofia Sans Extra Condensed';
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html {
+  scrollbar-width: auto;                      
+  scrollbar-color: #45035f #f6dcff;;           
+}
+
+html::-webkit-scrollbar {
+  width: 14px;                                
+  height: 14px;                               
+}
+
+html::-webkit-scrollbar-track {
+  background: #f1f5f9;                        
+  border-radius: 10px;                        
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #DFB4EF;
+  padding-top: 76px;
+}
+
+.home {
+  flex: 1;
+}

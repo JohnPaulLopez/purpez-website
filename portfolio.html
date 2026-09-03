@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="purpez-styles/header.css">
+  <link rel="stylesheet" href="purpez-styles/purpez.css">
+  <link rel="stylesheet" href="purpez-styles/footer.css">
+  <link rel="stylesheet" href="purpez-styles/services.css">
+  <link rel="stylesheet" href="purpez-styles/portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- links/sections container -->
+    <nav class="nav-container">
+      <nav class="left-section">
+        <a href="index.html" class="home-button">Home</a>
+        <a href="services.html" class="shop-button">Services</a>
+        <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+      </nav>
+      <nav class="right-section">
+        <a href="about.html" class="my-purpez-button">About Us</a>
+        <a href="contact.html" class="how-to-pay-button">Contact</a>
+      </nav>
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/purpezdesign"><img src="icons/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-icon"></a>
+        <a href="https://www.facebook.com/profile.php?id=61588766654331"><img src="icons/facebook-boxed-svgrepo-com.svg" alt="facebook-icon"></a>
+        <a href="https://www.tiktok.com/@purpezdesign"><img src="icons/tiktok-svgrepo-com.svg" alt="tiktok-icon"></a>
+      </div>
+    </nav>
+
+    <!-- logo outside the container for visibility -->
+    <div class="middle-section">
+      <a href="index.html"><img class="purpez-logo" src="icons/PURPEZHOME.png"></a>
+    </div>
+  </header>
+
+  <div class="portfolio-header-container">
+    <div class="portfolio-content">
+      <h1 class="portfolio-header">EXPLORE PREVIOUS PROJECTS:</h1>
+
+      <div class="portfolio-options-gallery">
+        <label class="portfolio-thumb" for="portfolio-open-1">
+          <img class="portfolio-p-1" src="portfolio-images/SlushiesWeb.png" alt="Slushies design preview">
+        </label>
+        <label class="portfolio-thumb" for="portfolio-open-2">
+          <img class="portfolio-p-2" src="portfolio-images/StrawberryCrumbLogo.png" alt="Strawberry Crumb design preview">
+        </label>
+        <label class="portfolio-thumb" for="portfolio-open-3">
+          <img class="portfolio-p-3" src="portfolio-images/Strawberry_Crumb_Banner.png" alt="Strawberry Crumb Banner design preview">
+        </label>
+        <label class="portfolio-thumb" for="portfolio-open-4">
+          <img class="portfolio-p-4" src="portfolio-images/StrawberryCrumbMenu.png" alt="Strawberry Crumb Menu design preview">
+        </label>
+        <label class="portfolio-thumb" for="portfolio-open-5">
+          <img class="portfolio-p-5" src="portfolio-images/PURPEZLOGO.png" alt="Purpez logo design preview">
+        </label>
+        <label class="portfolio-thumb" for="portfolio-open-6">
+          <img class="portfolio-p-6" src="portfolio-images/BANNER.png" alt="Purpez Banner design preview">
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <input type="checkbox" id="portfolio-open-1" class="portfolio-toggle">
+  <div class="portfolio-lightbox">
+    <label for="portfolio-open-1" class="portfolio-lightbox-close" aria-label="Close image">&times;</label>
+    <img src="portfolio-images/SlushiesWeb.png" alt="Expanded Slushies design preview">
+  </div>
+
+  <input type="checkbox" id="portfolio-open-2" class="portfolio-toggle">
+  <div class="portfolio-lightbox">
+    <label for="portfolio-open-2" class="portfolio-lightbox-close" aria-label="Close image">&times;</label>
+    <img src="portfolio-images/StrawberryCrumbLogo.png" alt="Expanded Strawberry Crumb logo preview">
+  </div>
+
+  <input type="checkbox" id="portfolio-open-3" class="portfolio-toggle">
+  <div class="portfolio-lightbox">
+    <label for="portfolio-open-3" class="portfolio-lightbox-close" aria-label="Close image">&times;</label>
+    <img src="portfolio-images/Strawberry_Crumb_Banner.png" alt="Expanded Strawberry Crumb Banner preview">
+  </div>
+
+  <input type="checkbox" id="portfolio-open-4" class="portfolio-toggle">
+  <div class="portfolio-lightbox">
+    <label for="portfolio-open-4" class="portfolio-lightbox-close" aria-label="Close image">&times;</label>
+    <img src="portfolio-images/StrawberryCrumbMenu.png" alt="Expanded Strawberry Crumb Menu preview">
+  </div>
+
+  <input type="checkbox" id="portfolio-open-5" class="portfolio-toggle">
+  <div class="portfolio-lightbox">
+    <label for="portfolio-open-5" class="portfolio-lightbox-close" aria-label="Close image">&times;</label>
+    <img src="portfolio-images/PURPEZLOGO.png" alt="Expanded Purpez logo preview">
+  </div>
+
+  <input type="checkbox" id="portfolio-open-6" class="portfolio-toggle">
+  <div class="portfolio-lightbox">
+    <label for="portfolio-open-6" class="portfolio-lightbox-close" aria-label="Close image">&times;</label>
+    <img src="portfolio-images/BANNER.png" alt="Expanded Purpez Banner preview">
+  </div>
+
+  <div class="portfolio-first-container">
+    <div class="portfolio-first-content">
+      <h2 class="help-build-portfolio">
+        HELP US ADD TO OUR PORTFOLIO
+      </h2>
+      <p class="help-build-portfolio-text">
+        Let's create something with purpose. Let's create with Purpez.
+      </p>
+      <a href="services.html" target="_blank">
+        <button class="explore-services-button">Explore Services</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="sixth-section-container">
+      <div class="sixth-section-content">
+        <a href="https://linktr.ee/PURPEZ" target="_blank" rel="noopener noreferrer">@purpezdesign on Linktree</a>
+      </div>
+    </div>
+
+ <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="purpez-info">
+          <h2>PURPEZ DESIGN</h2>
+          <p>Handcrafted Designs by John Paul</p>
+          <p>All Content was made & published by John Paul</p>
+        </div>
+        <div class="footer-actions">
+          <div class="services-actions">
+            <h2 class="action-header">Services</h2>
+            <ul class="ordered-list">
+              <li><a href="flyers.html">Flyers</a></li>
+              <li><a href="business-cards.html">Business Cards</a></li>
+              <li><a href="contact.html">Suggestions</a></li>
+            </ul>
+          </div>
+          <div class="about-actions">
+            <h2 class="action-header">Information</h2>
+            <ul class="ordered-list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <div class="social-icons">
+        <a href="https://www.instagram.com/purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-icon"></a> 
+        <a href="https://www.facebook.com/profile.php?id=61588766654331" target="_blank" rel="noopener noreferrer"><img src="icons/facebook-boxed-svgrepo-com.svg" alt="facebook-icon"></a>   
+        <a href="https://www.tiktok.com/@purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/tiktok-svgrepo-com.svg" alt="tiktok-icon"></a> 
+        <a href="https://www.youtube.com/@purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/youtube-168-svgrepo-com.svg" alt="yt-icon"></a> 
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">
+          &copy; 2026 All Rights Reserved |
+          <a href="index.html">Purpez Design</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

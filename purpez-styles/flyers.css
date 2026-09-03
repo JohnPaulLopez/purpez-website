@@ -1,0 +1,248 @@
+* {
+  font-family:'Instrument Serif', 'Sofia Sans Extra Condensed';
+}
+
+.flyers-section-container {
+  background-color: #ca9bdbc7;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #250133;
+}
+
+.flyers-content, 
+.flyers2-content {
+  text-align: center;
+}
+
+.flyers-headline, 
+.flyers2-headline {
+  font-family: 'Sofia Sans Extra Condensed', 'Instrument Serif';
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flyers-price {
+  margin: -2px 0 0;
+  color: #34004d;
+  font: 18px 'Sofia Sans Extra Condensed', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #a768c460;
+  border-radius: 60px;
+  padding: 6px 6px;
+  width: fit-content;
+  margin: auto;
+}
+
+.flyers-text, 
+.flyers2-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.flyers2-section-container {
+  background-color: #DFB4EF;
+}
+
+.flyer-form {
+  width: min(90%, 900px);
+  margin: 0 auto;
+  padding: 20px 0 100px;
+  color: #250133;
+}
+
+.flyer-form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 28px;
+}
+
+.flyer-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.flyer-form-field span {
+  color: #250133;
+}
+
+.flyer-form-field input,
+.flyer-form-field textarea,
+.flyer-form-field select {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #250133;
+  border-radius: 3px;
+  padding: 11px 12px;
+  background-color: #f0d9f3ce;
+  color: #250133;
+  font: 18px 'Instrument Serif', serif;
+}
+
+.flyer-form-field select {
+  cursor: pointer;
+}
+
+.flyer-form-file {
+  cursor: pointer;
+}
+
+.flyer-form-file::file-selector-button {
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 1px solid #250133;
+  padding: 8px 12px;
+  background-color: #250133;
+  color: #f0d9f3;
+  font: 16px 'Instrument Serif', serif;
+  cursor: pointer;
+}
+
+.flyer-form-field input::placeholder,
+.flyer-form-field textarea::placeholder {
+  padding-left: 2px;
+  color: #250133;
+  opacity: 0.75;
+  font-size: 16px;
+}
+
+.flyer-form-field input:focus,
+.flyer-form-field textarea:focus {
+  outline: 2px solid #983cce;
+  outline-offset: 2px;
+}
+
+.flyer-form-field textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.flyer-form-field-wide {
+  grid-column: 1 / -1;
+}
+
+.flyer-form-pricing-space {
+  grid-column: 1 / -1;
+  min-height: 36px;
+}
+
+.flyer-form-subhead {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #7d25ad;
+  font: 15px 'Sofia Sans Extra Condensed', sans-serif;
+  font-weight: 600;
+}
+
+.flyer-form-agreement {
+  margin-top: 28px;
+  border-top: 1px solid #250133;
+  border-bottom: 1px solid #250133;
+  padding: 12px 16px;
+  background-color: transparent;
+  color: #250133;
+  text-align: center;
+  font: 16px 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.flyer-form-agreement p {
+  margin: 0;
+  font-family: 'Sofia Sans Extra Condensed';
+}
+
+.flyer-form-submit {
+  display: block;
+  margin: 32px auto 0;
+  border: 1px solid #250133;
+  border-radius: 0;
+  padding: 10px 20px;
+  background-color: #250133;
+  color: #DFB4EF;
+  cursor: pointer;
+  font: 20px 'Instrument Serif', serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.flyer-form-submit:hover {
+  background-color: transparent;
+  color: #250133;
+}
+
+.flyer-payment-section {
+  padding: 60px 20px 70px;
+  color: #edbeff;
+  text-align: center;
+  background-color: #250133;
+}
+
+.flyer-payment-heading {
+  margin: 0 0 20px;
+  font: 48px 'Sofia Sans Extra Condensed', sans-serif;
+  font-weight: 600;
+}
+
+.flyer-payment-text {
+  margin: 0 auto 35px;
+  color: #DFB4EF;
+  font: 18px 'Instrument Serif';
+}
+
+.flyer-payment-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.flyer-payment-link {
+  min-width: 110px;
+  border: 1px solid #edc0ff;
+  border-radius: 60px;
+  padding: 10px 15px;
+  color: #f6deff;
+  text-decoration: none;
+  font: 25px 'Sofia Sans Extra Condensed', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flyer-payment-link:hover {
+  background-color: #e4e4e4;
+  border: 1.5px solid #fafafa;
+  color: #250133;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.flyer-form-pricing-space {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #250133;
+}
+
+.flyer-sidespayment-text {
+  font-family: 'Sofia Sans Extra Condensed', 'Instrument Serif';
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 680px) {
+  .flyer-form {
+    width: auto;
+    margin: 0 20px;
+    padding-bottom: 70px;
+  }
+
+  .flyer-form-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .flyer-form-field-wide {
+    grid-column: auto;
+  }
+}
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyers</title>
+  <link rel="stylesheet" href="purpez-styles/home.css">
+  <link rel="stylesheet" href="purpez-styles/header.css">
+  <link rel="stylesheet" href="purpez-styles/purpez.css">
+  <link rel="stylesheet" href="purpez-styles/footer.css">
+  <link rel="stylesheet" href="purpez-styles/contact.css">
+  <link rel="stylesheet" href="purpez-styles/flyers.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- links/sections container -->
+    <nav class="nav-container">
+      <nav class="left-section">
+        <a href="index.html" class="home-button">Home</a>
+        <a href="services.html" class="shop-button">Services</a>
+        <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+      </nav>
+      <nav class="right-section">
+        <a href="about.html" class="my-purpez-button">About Us</a>
+        <a href="contact.html" class="how-to-pay-button">Contact</a>
+      </nav>
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/purpezdesign"><img src="icons/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-icon"></a>
+        <a href="https://www.facebook.com/profile.php?id=61588766654331"><img src="icons/facebook-boxed-svgrepo-com.svg" alt="facebook-icon"></a>
+        <a href="https://www.tiktok.com/@purpezdesign"><img src="icons/tiktok-svgrepo-com.svg" alt="tiktok-icon"></a>
+      </div>
+    </nav>
+
+    <!-- logo outside the container for visibility -->
+    <div class="middle-section">
+      <a href="index.html"><img class="purpez-logo" src="icons/PURPEZHOME.png"></a>
+    </div>
+  </header>
+
+  <div class="flyers-section-container">
+    <div class="flyers-content">
+      <h1 class="flyers-headline">FLYERS</h1>
+      <p class="flyers-price">$10</p>
+      <p class="flyers-text">
+        Flyers are a great way to promote your business, event, or product. When creating flyers, we focus on something that will grab attention while also displaying the heart of your business. Whether you need a flyer for your business, event, product, social media, etc, we will create something that will bring your vision to life, with Purpez.
+      </p>
+    </div>
+  </div> 
+
+  <div class="flyers2-section-container">
+    <div class="flyers2-content">
+      <h1 class="flyers2-headline">FILL OUT THE FLYER FORM</h1>
+      <p class="flyers2-text">
+        Fill out the flyer form below to get started on your flyer design. Please provide as much detail as possible to ensure we can create a flyer that meets your needs and expectations. Once you submit the form, we will review your information and get back to you with any questions or next steps.
+      </p>
+    </div>
+  </div>
+
+  <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="flyer-form">
+    <input type="hidden" name="access_key" value="4de8c0d4-0ca4-4762-892c-0a3ea6099c0b">
+    <div class="flyer-form-fields">
+      <label class="flyer-form-field">
+        <span>First & Last Name</span>
+        <input type="text" placeholder="Please provide your full name" name="first_name" required>
+      </label>
+      <label class="flyer-form-field">
+        <span>Pronouns</span>
+        <select name="pronouns" placeholder="Please provide your pronouns">
+          <option value="">Select an option</option>
+          <option value="he/him">He/Him</option>
+          <option value="she/her">She/Her</option>
+          <option value="they/them">They/Them</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+      </label>
+      <label class="flyer-form-field">
+        <span>Your Email</span>
+        <input type="email" placeholder="Please provide your email address" name="email" required>
+      </label>
+      <label class="flyer-form-field">
+        <span>Your Business/Event Name</span>
+        <input type="text" placeholder="Please provide your business/event name" name="business_event_name" required>
+      </label>
+      <div class="flyer-form-pricing-space">
+        <p class="flyer-sidespayment-text">
+          Please note that the pricing for flyers is as follows: Single-sided flyers are priced at $10, while double-sided flyers are priced at $20. Double-sided flyers provide more space for information and visuals, making them ideal for businesses or events that require additional content and/or information.
+        </p>
+      </div>
+      <label class="flyer-form-field">
+        <span>How Many Sides?</span>
+        <h3 class="flyer-form-subhead">&ast;Double-sided flyers add an additional $10.&ast;</h3>
+        <select name="sides" required>
+          <option value="single-sided">Single-sided - $10</option>
+          <option value="double-sided">Double-sided - $20</option>
+        </select>
+      </label>
+      <label class="flyer-form-field">
+        <span>When Is It Needed?</span>
+        <h4 class="flyer-form-subhead">&ast;Flyers need to be booked at least one week in advance.&ast;</h4>
+        <input type="date" name="date_and_time" min="2026-09-09">
+      </label>
+      <label class="flyer-form-field">
+        <span>What Size?</span>
+        <input type="text" name="size" placeholder="e.g., 8.5 x 11 inches, 1080 x 1350 pixels" required>
+      </label>
+      <label class="flyer-form-field">
+        <span>What Is The Flyer For?</span>
+        <input type="text" placeholder="e.g., Product launch, event promotion" name="flyer_purpose" required>
+      </label>
+      <label class="flyer-form-field">
+        <span>What Vibe Should It Convey?</span>
+        <input type="text" placeholder="e.g., Professional, casual, fun/cute" name="flyer_vibe">
+      </label>
+      <label class="flyer-form-field">
+        <span>Main Headline &#47; Hook</span>
+        <input type="text" placeholder="e.g., Special Offer Inside!" name="flyer_headline">
+      </label>
+      <label class="flyer-form-field">
+        <span>What Details &#47; Information Must Be Included?</span>
+        <input type="text" placeholder="e.g., Contact information, location, prices" name="important_details">
+      </label>
+      <label class="flyer-form-field">
+        <span>Call-to-Action / Contact Information</span>
+        <input type="text" placeholder="e.g., RSVP by visiting our site, or text 123-456-7890" name="call_to_action">
+      </label>
+      <label class="flyer-form-field">
+        <span>Are There Specific Colors You Want Prioritized?</span>
+        <input type="text" placeholder="e.g., Off white, gold, black, no preference" name="preferred_colors">
+      </label>
+      <label class="flyer-form-field">
+        <span>Where Will The Flyer Be Shared?</span>
+        <input type="text" placeholder="e.g., Website, social media, in-person" name="flyer_placement">
+      </label>
+      <label class="flyer-form-field flyer-form-field-wide">
+        <span>Do You Have Images or a Logo to Include?</span>
+        <h3 class="flyer-form-subhead">Sharp, crisp images work best!</h3>
+        <input class="flyer-form-file" type="file" name="attachment" accept="image/*,.png,.jpg,.jpeg,.svg,.pdf,.doc,.docx,.ppt,.pptx" multiple>
+      </label>
+      <label class="flyer-form-field flyer-form-field-wide">
+        <span>Any Additional Information? Lay it all out!</span>
+        <textarea name="message" required placeholder="Tell us anything else that might be important for your flyer design."></textarea>
+      </label>
+    </div>
+    <div class="flyer-form-agreement">
+      <p>
+        By submitting this form, you acknowledge that each flyer purchase includes one revision.
+        Additional revisions or changing the text completely after the design is finished will require purchasing a new flyer slot. Please ensure that all necessary information is provided in the initial submission to minimize the need for revisions.
+      </p>
+    </div>
+    <div class="flyer-form-turnstile">
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAABk3NkzW8123456" data-theme="light"></div>
+    </div>
+    <button class="flyer-form-submit" type="submit">Submit Form</button>
+  </form>
+
+  <section class="flyer-payment-section" aria-labelledby="flyer-payment-heading">
+    <h2 id="flyer-payment-heading" class="flyer-payment-heading">PAY HERE</h2>
+    <p class="flyer-payment-text">After submitting your form, use one of the options below to pay for your flyer.</p>
+    <div class="flyer-payment-links">
+      <a class="flyer-payment-link" href="https://venmo.com/code?user_id=4639308287837393426&amp;created=1788410661" target="_blank" rel="noopener noreferrer">Venmo</a>
+      <a class="flyer-payment-link" href="https://cash.app/$JohnPaulLpz" target="_blank" rel="noopener noreferrer">Cash App</a>
+    </div>
+  </section>
+
+  <div class="sixth-section-container">
+    <div class="sixth-section-content">
+      <a href="https://linktr.ee/PURPEZ" target="_blank" rel="noopener noreferrer">@purpezdesign on Linktree</a>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="purpez-info">
+          <h2>PURPEZ DESIGN</h2>
+          <p>Handcrafted Designs by John Paul</p>
+          <p>All Content was made & published by John Paul</p>
+        </div>
+        <div class="footer-actions">
+          <div class="services-actions">
+            <h2 class="action-header">Services</h2>
+            <ul class="ordered-list">
+              <li><a href="flyers.html">Flyers</a></li>
+              <li><a href="business-cards.html">Business Cards</a></li>
+              <li><a href="contact.html">Suggestions</a></li>
+            </ul>
+          </div>
+          <div class="about-actions">
+            <h2 class="action-header">Information</h2>
+            <ul class="ordered-list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <div class="social-icons">
+        <a href="https://www.instagram.com/purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-icon"></a> 
+        <a href="https://www.facebook.com/profile.php?id=61588766654331" target="_blank" rel="noopener noreferrer"><img src="icons/facebook-boxed-svgrepo-com.svg" alt="facebook-icon"></a>   
+        <a href="https://www.tiktok.com/@purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/tiktok-svgrepo-com.svg" alt="tiktok-icon"></a> 
+        <a href="https://www.youtube.com/@purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/youtube-168-svgrepo-com.svg" alt="yt-icon"></a> 
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">
+          &copy; 2026 All Rights Reserved |
+          <a href="index.html">Purpez Design</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

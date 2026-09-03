@@ -1,0 +1,242 @@
+* {
+	font-family: 'Instrument Serif', 'Sofia Sans Extra Condensed';
+}
+
+.business-cards-section-container {
+	background-color: #ca9bdbc7;
+	border-bottom: 1px solid #250133;
+}
+
+.business-cards-content,
+.business-cards2-content {
+	text-align: center;
+}
+
+.business-cards-headline,
+.business-cards2-headline {
+	margin-bottom: 10px;
+	font-family: 'Sofia Sans Extra Condensed', 'Instrument Serif';
+	font-size: 55px;
+	font-weight: bold;
+}
+
+.business-cards-price {
+	margin: -2px 0 0;
+  color: #34004d;
+  font: 18px 'Sofia Sans Extra Condensed', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #a768c460;
+  border-radius: 60px;
+  padding: 6px 6px;
+  width: fit-content;
+  margin: auto;
+}
+
+.business-cards-text,
+.business-cards2-text {
+	margin-bottom: 10px;
+	padding: 30px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.business-cards2-section-container {
+	background-color: #DFB4EF;
+}
+
+.business-card-form {
+	width: min(90%, 900px);
+	margin: 0 auto;
+	padding: 20px 0 100px;
+	color: #250133;
+}
+
+.business-card-form-fields {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 24px 28px;
+}
+
+.business-card-form-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 18px;
+}
+
+.business-card-form-field span {
+	color: #250133;
+}
+
+.business-card-form-field input,
+.business-card-form-field textarea,
+.business-card-form-field select {
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #250133;
+	border-radius: 3px;
+	padding: 11px 12px;
+	background-color: #f0d9f3ce;
+	color: #250133;
+	font: 18px 'Instrument Serif', serif;
+}
+
+.business-card-form-field select,
+.business-card-form-file {
+	cursor: pointer;
+}
+
+.business-card-form-file::file-selector-button {
+	margin-right: 12px;
+	border: 1px solid #250133;
+	border-radius: 6px;
+	padding: 8px 12px;
+	background-color: #250133;
+	color: #f0d9f3;
+	font: 16px 'Instrument Serif', serif;
+	cursor: pointer;
+}
+
+.business-card-form-field input::placeholder,
+.business-card-form-field textarea::placeholder {
+	padding-left: 2px;
+	color: #250133;
+	opacity: 0.75;
+	font-size: 16px;
+}
+
+.business-card-form-field input:focus,
+.business-card-form-field textarea:focus,
+.business-card-form-field select:focus {
+	outline: 2px solid #983cce;
+	outline-offset: 2px;
+}
+
+.business-card-form-field textarea {
+	min-height: 130px;
+	resize: vertical;
+}
+
+.business-card-form-field-wide {
+	grid-column: 1 / -1;
+}
+
+.business-card-form-subhead {
+	margin: 0;
+	color: #7d25ad;
+	font: 15px 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 600;
+}
+
+.business-card-form-agreement {
+	margin-top: 28px;
+	border-top: 1px solid #250133;
+	border-bottom: 1px solid #250133;
+	padding: 12px 16px;
+	color: #250133;
+	text-align: center;
+	font: 16px 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.business-card-form-agreement p {
+	margin: 0;
+}
+
+.business-card-form-submit {
+	display: block;
+	margin: 32px auto 0;
+	border: 1px solid #250133;
+	border-radius: 0;
+	padding: 10px 20px;
+	background-color: #250133;
+	color: #DFB4EF;
+	cursor: pointer;
+	font: 20px 'Instrument Serif', serif;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.business-card-form-submit:hover {
+	background-color: transparent;
+	color: #250133;
+}
+
+.business-card-payment-section {
+	padding: 60px 20px 70px;
+	background-color: #250133;
+	color: #edbeff;
+	text-align: center;
+}
+
+.business-card-payment-heading {
+	margin: 0 0 20px;
+	font: 48px 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 600;
+}
+
+.business-card-payment-text {
+	margin: 0 auto 35px;
+	color: #DFB4EF;
+	font: 18px 'Instrument Serif', serif;
+}
+
+.business-card-payment-links {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.business-card-payment-link {
+	min-width: 110px;
+	border: 1px solid #edc0ff;
+	border-radius: 60px;
+	padding: 10px 15px;
+	color: #f6deff;
+	text-decoration: none;
+	font: 25px 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 600;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.business-card-payment-link:hover {
+	background-color: #e4e4e4;
+	border-color: #fafafa;
+	color: #250133;
+}
+
+.business-card-form-pricing-space {
+	grid-column: 1 / -1;
+	border-top: 1px solid #250133;
+}
+
+.business-card-sidespayment-text {
+  font-family: 'Sofia Sans Extra Condensed';
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (min-width: 990px) {
+	.business-card-form-pricing-space {
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		box-sizing: border-box;
+		padding: 0 5vw;
+	}
+}
+
+@media (max-width: 989px) {
+	.business-card-form {
+		width: auto;
+		margin: 0 20px;
+		padding-bottom: 70px;
+	}
+
+	.business-card-form-fields {
+		grid-template-columns: 1fr;
+	}
+
+	.business-card-form-field-wide {
+		grid-column: auto;
+	}
+}

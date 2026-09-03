@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Cards</title>
+  <link rel="stylesheet" href="purpez-styles/home.css">
+  <link rel="stylesheet" href="purpez-styles/header.css">
+  <link rel="stylesheet" href="purpez-styles/purpez.css">
+  <link rel="stylesheet" href="purpez-styles/footer.css">
+  <link rel="stylesheet" href="purpez-styles/contact.css">
+  <link rel="stylesheet" href="purpez-styles/business-cards.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- links/sections container -->
+    <nav class="nav-container">
+      <nav class="left-section">
+        <a href="index.html" class="home-button">Home</a>
+        <a href="services.html" class="shop-button">Services</a>
+        <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+      </nav>
+      <nav class="right-section">
+        <a href="about.html" class="my-purpez-button">About Us</a>
+        <a href="contact.html" class="how-to-pay-button">Contact</a>
+      </nav>
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/purpezdesign"><img src="icons/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-icon"></a>
+        <a href="https://www.facebook.com/profile.php?id=61588766654331"><img src="icons/facebook-boxed-svgrepo-com.svg" alt="facebook-icon"></a>
+        <a href="https://www.tiktok.com/@purpezdesign"><img src="icons/tiktok-svgrepo-com.svg" alt="tiktok-icon"></a>
+      </div>
+    </nav>
+
+    <!-- logo outside the container for visibility -->
+    <div class="middle-section">
+      <a href="index.html"><img class="purpez-logo" src="icons/PURPEZHOME.png"></a>
+    </div>
+  </header>
+
+  <div class="business-cards-section-container">
+    <div class="business-cards-content">
+      <h1 class="business-cards-headline">BUSINESS CARDS</h1>
+      <p class="business-cards-price">$30</p>
+      <p class="business-cards-text">
+        Business cards are essential when owning any brand or company. They professionally share your contact information and represent your brand with ease. 
+        We create long lasting, professional business cards that make a lasting impact. Whether you need a simple design or a more complex layout, we will create something that reflects the heart of your brand and business goals.
+      </p>
+    </div>
+  </div> 
+
+  <div class="business-cards2-section-container">
+    <div class="business-cards2-content">
+      <h1 class="business-cards2-headline">FILL OUT THE BUSINESS CARD FORM</h1>
+      <p class="business-cards2-text">
+        Fill out the business card form below to get started on your design. Please provide as much detail as possible to ensure we can create a card that meets your needs and expectations. Once you submit the form, we will review your information and get back to you with any questions or next steps.
+      </p>
+    </div>
+  </div>
+
+  <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="business-card-form">
+    <input type="hidden" name="access_key" value="0bd59a17-a208-41ba-8ef2-7faf26ffd5f4">
+    <div class="business-card-form-fields">
+      <label class="business-card-form-field">
+        <span>First &amp; Last Name</span>
+        <input type="text" name="first_name" placeholder="Please provide your full name" required>
+      </label>
+      <label class="business-card-form-field">
+        <span>Your Email</span>
+        <input type="email" name="email" placeholder="Please provide your email address" required>
+      </label>
+      <label class="business-card-form-field">
+        <span>Business/Brand Name</span>
+        <input type="text" name="business_name" placeholder="Please provide your business/brand name" required>
+      </label>
+      <label class="business-card-form-field">
+        <span>Job Title or Role</span>
+        <input type="text" name="job_title" placeholder="e.g., Founder, CEO, Agent, etc">
+      </label>
+      <div class="business-card-form-pricing-space">
+        <p class="business-card-sidespayment-text">
+          Please note that the pricing for business cards is as follows: Single-sided cards are priced at $30, while double-sided cards are priced at $40. Double-sided cards provide more space for information and visuals, making them ideal to those who need to display more information.
+        </p>
+      </div>
+      <label class="business-card-form-field business-card-form-field-wide">
+        <span>How Many Sides?</span>
+        <h4 class="business-card-form-subhead">Double-sided cards include space for information on both sides. + $10.00</h3>
+        <select name="sides" required>
+          <option value="single-sided">Single-sided ($30.00)</option>
+          <option value="double-sided">Double-sided ($40.00)</option>
+        </select>
+      </label>
+      <label class="business-card-form-field">
+        <span>Card Layout/Orientation</span>
+        <select name="orientation" required>
+          <option value="standard">Horizontal Standard</option>
+          <option value="vertical">Vertical Standard</option>
+          <option value="custom">Square</option>
+        </select>
+      </label>
+      <label class="business-card-form-field">
+        <span>Business Tagline or Industry</span>
+        <input type="text" name="brand_slogan" placeholder="e.g., Quality you can trust, Innovation at its finest, I don't have one">
+      </label>
+      <label class="business-card-form-field business-card-form-field-wide">
+        <span>What Information Should Be Included?</span>
+        <textarea name="contact_information" placeholder="List Phone, email, website, and social handles exactly how they should appear."></textarea>
+      </label>
+      <label class="business-card-form-field">
+        <span>What Vibe Should It Convey?</span>
+        <input type="text" name="card_vibe" placeholder="e.g., Professional, modern, minimal">
+      </label>
+      <label class="business-card-form-field">
+        <span>Are There Specific Colors You Want Prioritized?</span>
+        <input type="text" name="preferred_colors" placeholder="e.g., Black, gold, white, no preference">
+      </label>
+      <label class="business-card-form-field business-card-form-field-wide">
+        <span>Do You Have Images or a Logo to Include?</span>
+        <h3 class="business-card-form-subhead">Sharp, crisp images work best!</h3>
+        <input class="business-card-form-file" type="file" name="attachment" accept="image/*,.png,.jpg,.jpeg,.svg,.pdf,.doc,.docx" multiple>
+      </label>
+      <label class="business-card-form-field business-card-form-field-wide">
+        <span>Any Additional Information? Lay it on us!</span>
+        <textarea name="message" placeholder="Tell us anything else that might be important for your business card design."></textarea>
+      </label>
+    </div>
+    <div class="business-card-form-agreement">
+      <p>By submitting this form, you acknowledge that each business card purchase includes three revisions, and you&#39;re purchasing a digital design file only &ast;no physical prints&ast;. Additional revisions or changing the text completely after the design is finished will require purchasing a new design slot.</p>
+    </div>
+    <button class="business-card-form-submit" type="submit">Submit Form</button>
+  </form>
+
+  <section class="business-card-payment-section" aria-labelledby="business-card-payment-heading">
+    <h2 id="business-card-payment-heading" class="business-card-payment-heading">PAY HERE</h2>
+    <p class="business-card-payment-text">After submitting your form, use one of the options below to pay for your business card design.</p>
+    <div class="business-card-payment-links">
+      <a class="business-card-payment-link" href="https://venmo.com/code?user_id=4639308287837393426&amp;created=1788410661" target="_blank" rel="noopener noreferrer">Venmo</a>
+      <a class="business-card-payment-link" href="https://cash.app/$JohnPaulLpz" target="_blank" rel="noopener noreferrer">Cash App</a>
+    </div>
+  </section>
+
+  <div class="sixth-section-container">
+    <div class="sixth-section-content">
+      <a href="https://linktr.ee/PURPEZ" target="_blank" rel="noopener noreferrer">@purpezdesign on Linktree</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="purpez-info">
+          <h2>PURPEZ DESIGN</h2>
+          <p>Handcrafted Designs by John Paul</p>
+          <p>All Content was made & published by John Paul</p>
+        </div>
+        <div class="footer-actions">
+          <div class="services-actions">
+            <h2 class="action-header">Services</h2>
+            <ul class="ordered-list">
+              <li><a href="flyers.html">Flyers</a></li>
+              <li><a href="business-cards.html">Business Cards</a></li>
+              <li><a href="contact.html">Suggestions</a></li>
+            </ul>
+          </div>
+          <div class="about-actions">
+            <h2 class="action-header">Information</h2>
+            <ul class="ordered-list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <div class="social-icons">
+        <a href="https://www.instagram.com/purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-icon"></a> 
+        <a href="https://www.facebook.com/profile.php?id=61588766654331" target="_blank" rel="noopener noreferrer"><img src="icons/facebook-boxed-svgrepo-com.svg" alt="facebook-icon"></a>   
+        <a href="https://www.tiktok.com/@purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/tiktok-svgrepo-com.svg" alt="tiktok-icon"></a> 
+        <a href="https://www.youtube.com/@purpezdesign" target="_blank" rel="noopener noreferrer"><img src="icons/youtube-168-svgrepo-com.svg" alt="yt-icon"></a> 
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">
+          &copy; 2026 All Rights Reserved |
+          <a href="index.html">Purpez Design</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

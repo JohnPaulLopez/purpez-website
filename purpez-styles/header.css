@@ -1,0 +1,258 @@
+.header {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #250133;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #DE8DFF;
+  z-index: 100;
+  padding: 0 20px;
+}
+
+/* wrapper style to help layout left n right sections together */
+.nav-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex: 1;
+}
+
+.shop-button {
+  font-family: 'Instrument Serif', Arial;
+  font-size: 18px;
+  color: #ebb9ff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.12s;
+}
+
+.shop-button:active, 
+.portfolio-button:active, 
+.my-purpez-button:active, 
+.why-not-ai-button:active, 
+.how-to-pay-button:active,
+.home-button:active {
+  opacity: 0.7;
+}
+
+.portfolio-button, 
+.my-purpez-button, 
+.why-not-ai-button, 
+.how-to-pay-button,
+.home-button {
+  font-family: 'Instrument Serif', Arial;
+  font-size: 18px;
+  color: #DE8DFF;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.12s;
+}
+
+.shop-button:hover, 
+.portfolio-button:hover, 
+.my-purpez-button:hover, 
+.why-not-ai-button:hover, 
+.how-to-pay-button:hover,
+.home-button:hover {
+  color: #ecd9ff;
+}
+
+.shop-button, 
+.portfolio-button, 
+.home-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.right-section {
+  color: #DE8DFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex: 1;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none; /* prevents invisible box from blocking clicks on menu */
+}
+
+.purpez-logo {
+  width: 170px;
+  height: 70px;
+  cursor: pointer;
+  align-items: center;
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.purpez-logo:active {
+  opacity: 0.8;
+}
+
+.nav-socials {
+  display: none;
+}
+
+#menu-toggle, 
+.hamburger {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 989px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    z-index: 101;
+    margin-left: 30px;
+  }
+
+  .hamburger:hover {
+    opacity: 0.8;
+  }
+
+  .hamburger:active {
+    opacity: 0.6;
+  }
+  
+  /* 3 lines of the hamburger */
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: #ebb9ff;
+  }
+
+  /* Hide the menu container entirely on mobile screens by default */
+  .nav-container { 
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #250133;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    z-index: 99;
+    flex-direction: column;
+
+    display: flex;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  /* Break the wide desktop spacing and arrange sections vertically */
+  .left-section, 
+  .right-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 30px;
+    flex: none;
+    width: 100%;
+  }
+
+  .nav-socials {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    width: 100%;
+    margin-top: 72px;
+    padding-bottom: 18px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-socials img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .nav-socials img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  .shop-button,
+  .portfolio-button, 
+  .home-button {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  .my-purpez-button, 
+  .how-to-pay-button {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .purpez-logo {
+    width: 140px;
+    height: auto;
+  }
+
+  /* shows menu right when the hamburger link is checked */
+  #menu-toggle:checked ~ .nav-container {
+    max-height: 700px;
+    opacity: 0.99;
+    pointer-events: auto;
+  }
+
+  #menu-toggle:checked ~ .nav-container .left-section,
+  #menu-toggle:checked ~ .nav-container .right-section,
+  #menu-toggle:checked ~ .nav-container .nav-socials {
+    display: flex;
+    opacity: 1;
+  }
+}
