@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flyers</title>
@@ -108,12 +107,12 @@
       </label>
       <label class="flyer-form-field">
         <span>When Is It Needed?</span>
-        <h4 class="flyer-form-subhead">&ast;Flyers need to be booked at least one week in advance.&ast;</h4>
+        <h4 class="flyer-form-subhead">&ast;Flyers require a 1-week turnaround. Please select a date at least 7 days away.&ast;</h4>
         <input type="date" name="date_and_time" min="2026-09-09">
       </label>
       <label class="flyer-form-field">
         <span>What Size?</span>
-        <input type="text" name="size" placeholder="e.g., 8.5 x 11 inches, 1080 x 1350 pixels" required>
+        <input type="text" name="size" placeholder="e.g., 8.5 x 11 inches, 1080 x 1350 pixels">
       </label>
       <label class="flyer-form-field">
         <span>What Is The Flyer For?</span>
@@ -121,7 +120,7 @@
       </label>
       <label class="flyer-form-field">
         <span>What Vibe Should It Convey?</span>
-        <input type="text" placeholder="e.g., Professional, casual, fun/cute" name="flyer_vibe">
+        <input type="text" placeholder="e.g., Professional, casual, fun/cute, not sure" name="flyer_vibe">
       </label>
       <label class="flyer-form-field">
         <span>Main Headline &#47; Hook</span>
@@ -137,7 +136,7 @@
       </label>
       <label class="flyer-form-field">
         <span>Are There Specific Colors You Want Prioritized?</span>
-        <input type="text" placeholder="e.g., Off white, gold, black, no preference" name="preferred_colors">
+        <input type="text" placeholder="e.g., Off white, gold, black, no preference, not sure" name="preferred_colors">
       </label>
       <label class="flyer-form-field">
         <span>Where Will The Flyer Be Shared?</span>
@@ -145,7 +144,7 @@
       </label>
       <label class="flyer-form-field flyer-form-field-wide">
         <span>Do You Have Images or a Logo to Include?</span>
-        <h3 class="flyer-form-subhead">Sharp, crisp images work best!</h3>
+        <h3 class="flyer-form-subhead">Sharp, crisp images work best! For logos, transparent backgrounds are preferred.</h3>
         <input class="flyer-form-file" type="file" name="attachment" accept="image/*,.png,.jpg,.jpeg,.svg,.pdf,.doc,.docx,.ppt,.pptx" multiple>
       </label>
       <label class="flyer-form-field flyer-form-field-wide">
@@ -158,9 +157,6 @@
         By submitting this form, you acknowledge that each flyer purchase includes one revision.
         Additional revisions or changing the text completely after the design is finished will require purchasing a new flyer slot. Please ensure that all necessary information is provided in the initial submission to minimize the need for revisions.
       </p>
-    </div>
-    <div class="flyer-form-turnstile">
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAAABk3NkzW8123456" data-theme="light"></div>
     </div>
     <button class="flyer-form-submit" type="submit">Submit Form</button>
   </form>
